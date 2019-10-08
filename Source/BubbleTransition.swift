@@ -115,7 +115,7 @@ public enum BubbleInteractiveTransitionSwipeDirection: CGFloat {
 open class BubbleInteractiveTransition: UIPercentDrivenInteractiveTransition {
   fileprivate var interactionStarted = false
   fileprivate var interactionShouldFinish = false
-  fileprivate var controller: UIViewController?
+  fileprivate weak var controller: UIViewController?
   
   /// The threshold that grants the dismissal of the controller. Values from 0 to 1
   open var interactionThreshold: CGFloat = 0.3
